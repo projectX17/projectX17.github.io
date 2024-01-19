@@ -80,3 +80,9 @@ body {
     cursor: pointer;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 350px) {
+    .navbar .a1 {
+      font-size: 10px;
+    }
+}
