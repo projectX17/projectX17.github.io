@@ -118,7 +118,7 @@ p {
 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 300px) {
     /* .team-member{
         position: fixed;
     } */
@@ -130,7 +130,7 @@ p {
 #harshith ,#yash ,#umash{
     width: 26%;
     height: auto;
-     margin: 10px;
+    margin: 10px;
     padding: 0;
     float: right;
     
