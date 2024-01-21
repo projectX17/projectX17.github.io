@@ -3,7 +3,7 @@
 }
 
 html {
-    font-family: cursive;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin : 0;
     padding : 0;
     height: 100vh;
@@ -19,6 +19,40 @@ body {
     background: url(assets/images/website/background.jpg);
     background-size: cover;
     background-position: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: medium;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 nav {
@@ -107,7 +141,7 @@ nav ul li a:hover {
     display: block;
     float: none;
     width: 100%;
-    text-align: right;
+    text-align: center;
     margin-bottom: 10px;
   }
 
@@ -129,6 +163,7 @@ nav ul li a:hover {
   .nav-wrapper ul li:nth-child(4)
   {
     transition-delay: 0.8s;
+    margin-top : 50px;
   }
 
   .nav-wrapper ul li:not(:first-child) {
@@ -178,6 +213,35 @@ nav ul li a:hover {
 
   .nav-btn i:nth-child(3) {
     margin-top: 4px;
+  }
+
+  .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
+
+@media  screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media  screen and (max-width: 450px) {
+  body {
+    position: fixed;
   }
 }
 
