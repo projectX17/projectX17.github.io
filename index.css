@@ -21,22 +21,28 @@ body {
     background-position: center;
 }
 
-h1 {
+/* h1 {
     font-size: 48px;
     font-weight: 600;
     color: rgb(255, 255, 255);
 
-    position: absolute;
+    
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+} */
+
+h1{
+  font-size: 48px;
+    font-weight: 600;
+  color: rgb(255, 255, 255);
 }
 
-.btn {
+/* .btn {
     display: inline-block;
     padding: 8px 24px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgb(255, 255, 255);
@@ -47,12 +53,35 @@ h1 {
     font-size: medium;
     letter-spacing: 1px;
     transition: all 0.2s ease;
+} */
+
+.btn{
+  padding: 8px 24px;
+  background: rgb(255, 255, 255);
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: medium;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+    
+    
 }
 
 .btn:hover {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+.taufic{
+  
+ 
+  margin-top: 20%;
+  text-align: center;
+  
+  
 }
 
 nav {
@@ -65,7 +94,8 @@ nav {
   /* background: url(assets/images/website/logo.jpeg); */
   /* background-size: cover; */
   /* background-position: center; */
-  width: 50px;
+ 
+  width: 150px;
   height: 50px;
   margin-top: 8px;
   margin-left: 16px;
@@ -215,7 +245,7 @@ nav ul li a:hover {
     margin-top: 4px;
   }
 
-  .btn {
+  /* .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -226,24 +256,151 @@ nav ul li a:hover {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     cursor: pointer;
+  } */
+
+  .taufic{
+    margin-top: 30%;
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
+@media  screen and (max-width: 1190px) {
+
+  .taufic{
+    margin-top: 30%;
+  }
+
+  
+  
+} 
+
+@media  screen and (max-width: 1000px) {
+
+  .taufic{
+    margin-top: 35%;
+  }
+
+  
+  
+} 
+
+@media  screen and (max-width: 1000px) {
+
+  .taufic{
+    margin-top: 40%;
+  }
+
+  
+  
+} 
+
+
+
+@media screen and (max-width: 850px) {
+  .taufic{
+    margin-top: 35%;
+  }
+
+ 
+}
+
+@media screen and (max-width: 800px) {
+  .taufic{
+    margin-top: 45%;
+  }
+
+ 
+}
+
+@media screen and (max-width: 770px) {
+  .taufic{
+    margin-top: 45%;
+  }
+
+  h1{
+    font-size:40px;
+  }
+
+ 
+}
+
+
+
+@media  screen and (max-width: 650px) {
+  .taufic{
+    margin-top: 60%;
+  }
+
+  
+}
+
+@media  screen and (max-width: 600px) {
+  .taufic{
+    margin-top: 65%;
+    
+  }
+
+
+
+  
+}
+
 
 @media  screen and (max-width: 480px) {
+  .taufic{
+    margin-top: 80%;
+  }
+
   h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
-@media  screen and (max-width: 450px) {
-  body {
+ /* @media  screen and (max-width: 450px) {
+
+  .taufic{
+    margin-top: 60%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+  
+}  */
+
+@media  screen and (max-width: 420px) {
+
+  .taufic{
+    margin-top: 85%;
+    
+  }
+} 
+
+@media  screen and (max-width: 360px) {
+
+  .taufic{
+    margin-top: 90%;
+    
+    
+  }
+
+  h1{
+    font-size: 28px;
+  }
+} 
+
+@media  screen and (max-width: 420px) {
+
+  body{
     position: fixed;
   }
-}
+} 
+
+
+
+
 
 #nav:checked + .nav-btn {
   transform: rotate(45deg);
