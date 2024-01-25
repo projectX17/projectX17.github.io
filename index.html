@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= stylesheet href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <title>ProjectX17</title>
 </head>
-<body>
+<body id="background">
     <div class="containet">
-        <nav>
+        <nav id="nav_blur">
             <input type="checkbox" id="nav" class="hidden">
 
             <label for="nav" class="nav-btn">
@@ -24,7 +26,7 @@
             <div class="nav-wrapper">
                 <ul>
                     <li><a href="index.html">Chat</a></li>
-                    <li><a href="chat.html">Exam</a></li>
+                    <li><a href="examsection.html">Exam</a></li>
                     <li><a href="saved.html">Saved</a></li>
                     <li><a href="about.html">About Us</a></li>
                 </ul>
@@ -35,13 +37,87 @@
        <div class="taufic">
         
             <h1>This is a personal website</h1>
-            <button class="btn">Login</button>
+            <button type="button" class="btn" onclick="openpup()">Login</button>
            
        </div>
+
+       <div class="login" id="popup">
+        
+        <!-- <button type="button"  onclick="closepup()">close</button> -->
+         <div class="container" id="container">
+            <!-- <img src="/assets/images/profile_img.png" alt="profil img" class="login-profil"> -->
+		<div class="log-in-container">
+
+            
+            
+			<form action="#">
+                <!-- <div class="social-container">
+					<img src="/assets/images/profile_img.png" alt="profil img" class="login-profil">
+				</div> -->
+
+                <!-- <img src="/assets/images/profile_img.png" alt="profil img" class="login-profil"> -->
+                
+				<h1>Login</h1>
+                    <!-- person logo  -->
+				
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<a href="#">Forgot your password?</a>
+                <br>
+				<button class="login-btn">Log In</button>
+			</form> 
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+                   
+                    
+					<h1>Project- X Login Form</h1>
+					<p>This login form is created using pure HTML and CSS. For social icons, FontAwesome is used.</p>
+                    
+                    
+				</div>
+			</div>
+            
+		</div>
+        <spam class="spam-cross">
+            <a onclick="closepup()" class="a-cross">
+                <span class="material-symbols-outlined" >
+                    close
+                </span>
+            </a>
+        </spam>
+	    
+    </div>
+
+        
+     </div>
            
         
         
 
+       <script>
+        let popup = document.getElementById("popup")
+        let background = document.getElementById("background")
+        let nav_blur = document.getElementById("nav_blur")
+        function openpup()
+        {
+            popup.classList.add("open-popup");
+            background.classList.add("open-popup-body-change")
+            nav_blur.classList.add("nav-blur")
+
+        }
+
+        function closepup()
+        {
+            popup.classList.remove("open-popup");
+            background.classList.remove("open-popup-body-change")
+            nav_blur.classList.remove("nav-blur")
+
+
+        }
+
+    </script>
     </div>
 </body>
 </html>

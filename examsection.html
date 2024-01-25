@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam section </title>
+    <link  rel="stylesheet" href="examsection.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <button type="submit" class="btn" onclick="openpup()" >submit  </button>
+
+        <div class="popup" id="popup">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iusto exercitationem soluta provident vel repudiandae adipisci alias reprehenderit cumque obcaecati vitae necessitatibus, accusamus ratione a ex nemo tempora temporibus sequi.
+            <button type="button" onclick="closepup()" >close </button>
+        </div>
+
+    </div>
+
+
+    <script>
+        let popup = document.getElementById("popup")
+
+        function openpup()
+        {
+            popup.classList.add("open-popup");
+
+        }
+
+        function closepup()
+        {
+            popup.classList.remove("open-popup");
+
+        }
+
+    </script>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="examsection.css">
+	<title>Login Form Using HTML And CSS Only</title>
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form action="#">
+				<h1>Login</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+				</div>
+				<span>or use your account</span>
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<a href="#">Forgot your password?</a>
+				<button>Log In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1>HTML CSS Login Form</h1>
+					<p>This login form is created using pure HTML and CSS. For social icons, FontAwesome is used.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
